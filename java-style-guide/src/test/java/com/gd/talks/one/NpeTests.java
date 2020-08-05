@@ -117,6 +117,8 @@ public class NpeTests {
 
     /**
      * 计算本次大选总收集票数
+     * <p>
+     * ① 链式调用，谨防NPE
      *
      * @param users 参选用户集合
      * @return 总票数

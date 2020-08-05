@@ -33,7 +33,9 @@ public class NpeTests {
      * <p>
      * ① (自动)拆箱有风险（NPE），装箱需谨慎（数值比较）
      * ② (增强)for循环的NPE
+     * ③ 【强制】当 switch 括号内的变量类型为 String 并且此变量为外部参数时，必须先进行 null判断
      *
+     * @site https://docs.oracle.com/javase/specs/jls/se8/html/jls-14.html#jls-14.11
      * @site https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html
      * @see NullPointerException
      */

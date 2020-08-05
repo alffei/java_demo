@@ -1,3 +1,5 @@
+*.iml
+
 ### Java ###
 # Compiled class file
 *.class
@@ -22,6 +24,8 @@
 
 ### Maven ###
 target/
+
+.idea/
 
 ### macOS ###
 # General

@@ -6,7 +6,7 @@ import org.junit.Test;
  * ## Demo1
  * 【强制】所有整型包装类对象之间值的比较，全部使用equals方法比较。
  */
-public class IntegerTests {
+public class IntegerTest {
 
     /**
      * 整数比较

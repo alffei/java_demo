@@ -14,7 +14,7 @@ import java.util.List;
  * Q1:哪些用法可能造 NPE 相关的 BUG？
  * Q2:如何更有效地避免空指针呢
  */
-public class NpeTests {
+public class NpeTest {
 
     /**
      * 逻辑FLAG

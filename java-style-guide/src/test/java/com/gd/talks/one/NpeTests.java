@@ -8,14 +8,16 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * DEMO 2: 寻找NPE
+ * DEMO 2:
+ * 【强制】Object 的 equals 方法容易抛空指针异常，应使用常量或确定有值的对象来调用 equals。
+ * <p>
  */
 public class NpeTests {
 
     /**
      * 逻辑FLAG
      * <p>
-     * 测试值：1、 2、 null
+     * 测试值：null、2、 1
      */
     public static final Integer FLAG = null;
     /**
@@ -40,9 +42,8 @@ public class NpeTests {
                 case "Chen":
                     user.setScore(10000);
                     break;
-                case "Trump":
                 case "null":
-                    user.setScore(0);
+                    System.out.println("异常候选人");
                     break;
                 default:
                     break;
@@ -80,7 +81,7 @@ public class NpeTests {
     /**
      * 根据名字配置用户
      *
-     * @param user 用户
+     * @param user
      */
     private void findFormerPresident(UserDTO user) {
         if (isPresident(user)) {

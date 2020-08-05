@@ -3,16 +3,13 @@ package com.gd.talks.one;
 import org.junit.Test;
 
 /**
- * ## Demo1
+ * ## Demo1：整型比较
  * 【强制】所有整型包装类对象之间值的比较，全部使用equals方法比较。
  */
 public class IntegerTests {
 
     /**
      * 整数比较
-     * <p>
-     * 设置JVM参数：java.lang.Integer.IntegerCache.high
-     * <a href='https://docs.oracle.com/javase/specs/jls/se8/html/jls-5.html#jls-5.1.7>JLS5.1</a>
      */
     @Test
     public void compareInteger() {

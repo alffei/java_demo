@@ -8,11 +8,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * DEMO 2:
- * 【强制】Object 的 equals 方法容易抛空指针异常，应使用常量或确定有值的对象来调用 equals。
- * <p>
- * Q1:哪些用法可能造 NPE 相关的 BUG？
- * Q2:如何更有效地避免空指针呢
+ * DEMO 2: 寻找NPE
  */
 public class NpeTests {
 
@@ -30,11 +26,6 @@ public class NpeTests {
     /**
      * 寻找NPE
      *
-     * <p>
-     * ① (自动)拆箱有风险（NPE），装箱需谨慎（数值比较）
-     * ② (增强)for循环的NPE
-     *
-     * @site https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html
      * @see NullPointerException
      */
     @Test
@@ -88,10 +79,8 @@ public class NpeTests {
 
     /**
      * 根据名字配置用户
-     * <p>
-     * ① 逻辑判断表达式结果不能为null
      *
-     * @param user
+     * @param user 用户
      */
     private void findFormerPresident(UserDTO user) {
         if (isPresident(user)) {
@@ -101,8 +90,6 @@ public class NpeTests {
 
     /**
      * 判断是否为总统
-     * <p>
-     * ① Object 的 equals 方法容易抛空指针异常，应使用常量或确定有值的对象来调用 equals
      *
      * @param user 用户
      * @return 是否为总统

@@ -19,9 +19,9 @@ public class JdbcRealmTest {
     DruidDataSource dataSource = new DruidDataSource();
 
     {
-        dataSource.setUrl("jdbc:mysql://rm-uf6b17uut6rr6ioutyo.mysql.rds.aliyuncs.com:3306/jdbc_realm_test?useSSL=true");
-        dataSource.setUsername("gd_base");
-        dataSource.setPassword("Abcd@1234");
+        dataSource.setUrl("jdbc:mysql://xxx:3306/jdbc_realm_test?useSSL=true");
+        dataSource.setUsername("xxx");
+        dataSource.setPassword("xxx");
     }
 
     @Test

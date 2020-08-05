@@ -1,5 +1,12 @@
 package com.gd.talks.one;
 
+/**
+ * Switch 空指针简析
+ * <p>
+ * javac SwitchTest.java
+ * <p>
+ * javap -c SwitchTest
+ */
 public class SwitchTest {
 
     public static void main(String[] args) {

@@ -49,9 +49,8 @@ public class NpeTests {
                 case "Chen":
                     user.setScore(10000);
                     break;
-                case "Trump":
                 case "null":
-                    user.setScore(0);
+                    System.out.println("异常候选人");
                     break;
                 default:
                     break;

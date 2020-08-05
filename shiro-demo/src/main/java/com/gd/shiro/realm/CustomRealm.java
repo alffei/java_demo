@@ -14,6 +14,9 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * @author chenpengfei
+ */
 public class CustomRealm extends AuthorizingRealm {
 
     Map<String, String> userMap = new HashMap<>(16);

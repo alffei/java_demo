@@ -42,8 +42,8 @@ public class NpeTest {
     @Test
     public void iSeeNpe() {
         Integer flag = FLAG;
-        List<UserDTO> users = mockUserService(flag);
 
+        List<UserDTO> users = mockUserService(flag);
         // 变量选举结果
         for (UserDTO user : users) {
             // 内部处理

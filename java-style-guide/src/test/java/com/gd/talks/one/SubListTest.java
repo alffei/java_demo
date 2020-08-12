@@ -18,6 +18,8 @@ import java.util.List;
  * Q: Java对象在什么情况下可以类型转换？
  * Upcasting AND Downcasting
  * <p>
+ * Q: 如何生成'子'List，不影响'父'List？
+ * <p>
  * Q
  */
 public class SubListTest {
@@ -47,7 +49,7 @@ public class SubListTest {
     }
 
     /**
-     * 修改(set)
+     * 修改(set)：非结构性改变原List
      */
     @Test
     public void modifyTest() {
@@ -68,7 +70,7 @@ public class SubListTest {
     }
 
     /**
-     * 增(add):原列表
+     * 增(add)：结构性改变原List
      */
     @Test
     public void addTest() {
@@ -79,7 +81,7 @@ public class SubListTest {
     }
 
     /**
-     * 增(add):子列表
+     * 增(add)::结构性改变SubList
      */
     @Test
     public void addSubTest() {
@@ -90,7 +92,7 @@ public class SubListTest {
     }
 
     /**
-     * 删(remove):原列表
+     * 删(remove)：结构性改变原List
      */
     @Test
     public void removeTest() {
@@ -101,7 +103,7 @@ public class SubListTest {
     }
 
     /**
-     * 删(remove):子列表
+     * 删(remove):结构性改变SubList
      */
     @Test
     public void removeSubTest() {

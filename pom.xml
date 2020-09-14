@@ -13,6 +13,10 @@
         <module>shiro-demo</module>
         <module>shiro-spring-demo</module>
         <module>java-style-guide</module>
+        <module>socket</module>
+        <module>java-reflect-demo</module>
+        <module>modbus</module>
+        <module>functional-programming</module>
     </modules>
 
     <dependencies>

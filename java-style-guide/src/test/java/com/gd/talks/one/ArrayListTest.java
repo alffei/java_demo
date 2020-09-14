@@ -2,8 +2,7 @@ package com.gd.talks.one;
 
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * DEMO 3
@@ -36,5 +35,33 @@ public class ArrayListTest {
         int[] arr = new int[]{1, 2, 3, 4, 5};
         List list = Arrays.asList(arr);
         System.out.println(list.size());
+    }
+
+    /**
+     * 往数组中加不匹配的类型：ArrayStoreException
+     * <p>
+     *
+     * @see ArrayStoreException
+     * Thrown to indicate that an attempt has been made to store the
+     * wrong type of object into an array of objects. For example, the
+     * following code generates an <code>ArrayStoreException</code>:
+     * <blockquote><pre>
+     *     Object x[] = new String[3];
+     *     x[0] = new Integer(0);
+     * </pre></blockquote>
+     */
+    @Test
+    public void listToArray() {
+        Map<String, Object> map = new HashMap<>();
+        ArrayList<String> list = new ArrayList<>();
+        list.add(0, "1");
+        map.put("postIds", list);
+        // zxh
+        ArrayList<Long> postIdsList = new ArrayList<>((ArrayList<Long>) map.get("postIds"));
+        String[] postIds = postIdsList.toArray(new String[0]);
+        System.out.println(postIds.length);
+
+//        Object x[] = new String[3];
+//        x[0] = new Integer(0);
     }
 }

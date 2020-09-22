@@ -17,6 +17,9 @@
         <module>java-reflect-demo</module>
         <module>modbus</module>
         <module>functional-programming</module>
+        <module>java-io</module>
+        <module>google-guava</module>
+        <module>java-thread</module>
     </modules>
 
     <dependencies>
